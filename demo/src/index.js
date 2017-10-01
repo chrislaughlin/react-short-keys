@@ -1,13 +1,13 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
 import 'console-json';
-
-import KeyPress from '../../src/index';
+import KeyPress, {ARROW_DOWN,ARROW_LEFT,ARROW_RIGHT,ARROW_UP} from '../../src/index';
 import HandleKeyTriggers from './handleKeyTriggers';
 
 class Demo extends Component {
 
   state = {key: ''};
+
 
   setKey = event => this.setState({key: event.key});
 
@@ -20,7 +20,7 @@ class Demo extends Component {
         <div>
           <h1>react-short-keys Demo Yo!</h1>
           <KeyPress
-              onKeys={[37, 38, 39, 40]}
+              onKeys={[ARROW_LEFT, ARROW_RIGHT]}
               onKeyPress={this.setKey}
           />
           <HandleKeyTriggers

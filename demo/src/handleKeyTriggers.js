@@ -6,7 +6,7 @@ class HandleKeyTriggers extends Component {
         console.log(this.props);
         return (
             <section>
-                The last key pressed was <b>{this.props.pressedKey}</b>
+                The last key pressed was <b>{this.props.pressedKey}</b> 
             </section>
         );
     }

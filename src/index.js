@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types';
 import { handleKeyPress} from "./utils/keyUtils";
+import { ARROW_LEFT, ARROW_RIGHT, ARROW_UP, ARROW_DOWN } from './objects/commonCodes.js';
 
 class Keypress extends PureComponent {
 
@@ -25,3 +26,4 @@ Keypress.propTypes = {
 }
 
 export default Keypress;
+export { ARROW_LEFT, ARROW_RIGHT, ARROW_UP, ARROW_DOWN };
