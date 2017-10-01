@@ -1,6 +1,6 @@
 {
   "name": "react-short-keys",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "react-short-keys React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -25,9 +25,13 @@
   },
   "devDependencies": {
     "console-json": "^1.0.1",
+    "enzyme": "^3.0.0",
+    "enzyme-adapter-react-16": "^1.0.0",
     "nwb": "0.18.x",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0",
+    "sinon": "^4.0.0"
   },
   "author": "Chris Laughlin",
   "homepage": "https://github.com/chrislaughlin/react-short-keys",
