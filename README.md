@@ -56,3 +56,6 @@ The above example listens for the arrow keys and triggers a function only when a
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
 [npm]: https://www.npmjs.org/package/react-short-keys
 
+#edited
+
+Edit commonCodes.js in /src/objects which would work with the default KeyPress component.
