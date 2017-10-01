@@ -28,10 +28,10 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Chris Laughlin",
+  "homepage": "https://github.com/chrislaughlin/react-short-keys",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/chrislaughlin/react-short-keys",
   "keywords": [
     "react-component"
   ]
