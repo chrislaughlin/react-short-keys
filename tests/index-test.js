@@ -23,4 +23,5 @@ describe('KeyPress', () => {
         );
         expect(comp.type()).toEqual('div');
     });
-})
+
+});
