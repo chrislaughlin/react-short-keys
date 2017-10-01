@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import { handleKeyPress} from "./utils/keyUtils";
+import { ARROW_LEFT, ARROW_RIGHT, ARROW_UP, ARROW_DOWN } from './objects/commonCodes.js';
 
 class Keypress extends PureComponent {
 
@@ -19,3 +20,4 @@ class Keypress extends PureComponent {
 }
 
 export default Keypress;
+export { ARROW_LEFT, ARROW_RIGHT, ARROW_UP, ARROW_DOWN };
