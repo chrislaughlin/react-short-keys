@@ -1,21 +1,27 @@
 import expect from 'expect'
 import React from 'react'
-import {render, unmountComponentAtNode} from 'react-dom'
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+configure({ adapter: new Adapter() });
 
-import Component from 'src/'
+import {shallow} from 'enzyme';
 
-describe('Component', () => {
-  let node
+import KeyPress from '../src/index';
 
-  beforeEach(() => {
-    node = document.createElement('div')
-  })
+describe('KeyPress', () => {
 
-  afterEach(() => {
-    unmountComponentAtNode(node)
-  })
+    const minProps = {
+        onKeys: [3, 8],
+        onKeyPress: () => {}
+    };
 
-  it('passes tests', () => {
-    expect(1).toEqual(1);
-  })
-})
+    it('renders empty div', () => {
+        const comp = shallow(
+            <KeyPress
+                {...minProps}
+            />
+        );
+        expect(comp.type()).toEqual('div');
+    });
+
+});
