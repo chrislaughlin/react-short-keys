@@ -13,8 +13,7 @@ class Demo extends Component {
 
   render() {
     const {
-      key,
-     
+      key
     } = this.state;
 
     return (
@@ -26,7 +25,6 @@ class Demo extends Component {
           />
           <HandleKeyTriggers
               pressedKey={key}
-              
           />
         </div>
       )
