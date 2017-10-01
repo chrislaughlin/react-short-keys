@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types';
 import { handleKeyPress} from "./utils/keyUtils";
 
 class Keypress extends PureComponent {
@@ -16,6 +17,11 @@ class Keypress extends PureComponent {
     render() {
         return <div/>;
     }
+}
+
+Keypress.propTypes = {
+    onKeys: PropTypes.array,
+    onKeyPress: PropTypes.func,
 }
 
 export default Keypress;
