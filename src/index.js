@@ -1,9 +1,21 @@
-import React, {Component} from 'react'
+import React, { PureComponent } from 'react'
+import { handleKeyPress} from "./utils/keyUtils";
 
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
+class Keypress extends PureComponent {
+
+    onKeyPress = handleKeyPress(this.props.onKeys, this.props.onKeyPress);
+
+    componentDidMount() {
+        window.addEventListener('keydown', this.onKeyPress);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('keydown', this.onKeyPress);
+    };
+
+    render() {
+        return <div/>;
+    }
 }
+
+export default Keypress;
