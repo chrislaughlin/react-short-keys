@@ -1,3 +1,7 @@
+# How to contribute
+
+All contributions are welcome, issues can be raise and PR's can be opened. Please check the issues list before raising a new one. 
+
 ## Prerequisites
 
 [Node.js](http://nodejs.org/) >= v4 must be installed.
@@ -10,7 +14,7 @@
 
 - `npm start` will run a development server with the component's demo app at [http://localhost:3000](http://localhost:3000) with hot module reloading.
 
-## Running Tests
+## Running Tests (Not required)
 
 - `npm test` will run the tests once.
 
