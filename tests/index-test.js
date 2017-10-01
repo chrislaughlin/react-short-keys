@@ -5,6 +5,7 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 
 import {shallow} from 'enzyme';
+import sinon from 'sinon';
 
 import KeyPress from '../src/index';
 
@@ -24,4 +25,39 @@ describe('KeyPress', () => {
         expect(comp.type()).toEqual('div');
     });
 
+    it('should add event listener when mounting', () => {
+        const addEventStub = sinon.stub(window, 'addEventListener');
+        const comp = shallow(
+            <KeyPress
+                {...minProps}
+            />
+        );
+
+        comp.instance().componentDidMount();
+
+        expect(addEventStub.withArgs(
+            'keydown',
+            sinon.match.func
+        ).called).toBeTruthy();
+
+        addEventStub.restore();
+    });
+
+    it('should remove event listener when unmounting', () => {
+        const removeEventStub = sinon.stub(window, 'removeEventListener');
+        const comp = shallow(
+            <KeyPress
+                {...minProps}
+            />
+        );
+
+        comp.instance().componentWillUnmount();
+
+        expect(removeEventStub.withArgs(
+            'keydown',
+            sinon.match.func
+        ).called).toBeTruthy();
+
+        removeEventStub.restore();
+    });
 });
