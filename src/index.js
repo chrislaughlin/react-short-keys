@@ -20,8 +20,8 @@ class Keypress extends PureComponent {
 }
 
 Keypress.propTypes = {
-    onKeys: PropTypes.array,
-    onKeyPress: PropTypes.func,
+    onKeys: PropTypes.arrayOf(PropTypes.number).isRequired,
+    onKeyPress: PropTypes.func.isRequired,
 }
 
 export default Keypress;
