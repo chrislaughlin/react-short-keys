@@ -51,6 +51,8 @@ class Demo extends Component {
 
 The above example listens for the arrow keys and triggers a function only when an arrow key is triggered.
 
+![alt text](keypress.gif)
+
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
 [npm]: https://www.npmjs.org/package/react-short-keys
 
