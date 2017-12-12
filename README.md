@@ -51,11 +51,18 @@ class Demo extends Component {
 
 The above example listens for the arrow keys and triggers a function only when an arrow key is triggered.
 
+## Common key codes
+Some common key codes are bundled and exported for easy use. 
+```
+import KeyPress, { ARROW_LEFT, ARROW_RIGHT } from 'react-short-keys';
+
+....
+
+<KeyPress onKeys={[ARROW_LEFT, ARROW_RIGHT]} onKeyPres={() => someAction} />
+```
+
 ![alt text](keypress.gif)
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
 [npm]: https://www.npmjs.org/package/react-short-keys
 
-#edited
-
-Edit commonCodes.js in /src/objects which would work with the default KeyPress component.
