@@ -1,8 +1,11 @@
-# react-short-keys
+# React Short Keys 🔑
 
 [![npm package][npm-badge]][npm]
 
-A React component to capture and action on keyboard key press.
+A React component that allows you to handle keyboard input and react to keys pressed.
+- Zero dependency 0️⃣
+- Simple API 👌
+- Lightweight  :dove:
 
 # Install
 
@@ -22,6 +25,8 @@ yarn add react-short-keys
 Add the KeyPress component where you need to handle a keypress e.g
 
 ```
+import KeyPress from 'react-short-keys';
+
 class Demo extends Component {
 
   state = {key: ''};
