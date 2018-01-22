@@ -5,7 +5,7 @@
 A React component that allows you to handle keyboard input and react to keys pressed.
 - Zero dependency 0️⃣
 - Simple API 👌
-- Lightweight  :dove:
+- Lightweight (2.53 kB gzipped)  :dove:
 
 # Install
 
