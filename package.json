@@ -1,6 +1,6 @@
 {
   "name": "react-short-keys",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "react-short-keys React component",
   "main": "lib/index.js",
   "module": "es/index.js",
