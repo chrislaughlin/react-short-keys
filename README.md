@@ -7,6 +7,10 @@ A React component that allows you to handle keyboard input and react to keys pre
 - Simple API 👌
 - Lightweight (2.53 kB gzipped)  :dove:
 
+<img src="https://raw.githubusercontent.com/chrislaughlin/react-short-keys/master/public/reactsk.png" alt="React Short Keys Logo" height="250px"/>
+
+Logo designed by [Liffy Designs](http://www.liffydesigns.co.uk/)
+
 # Install
 
 Install via npm or yarn
